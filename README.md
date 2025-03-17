@@ -78,9 +78,9 @@ Specifically, `Py5Utilities` allows for the creation, allocation, and management
 Simply put, it's an intermediary that bridges the Python and Java sides, ensuring that any changes to the buffers made in Python (e.g., coordinate updates or color modifications) are reflected in Java’s rendering pipeline without the need for redundant data copying. This "zero-copy" data sharing enhances performance.
 
 ## Tests
-- 20_000 moving rectangles as **2d polylines** (80_000 short lines) at 60fps
-- 80_000 moving square-cornered **2d points** at 60fps
-- 5_000 moving (very long) **2d lines** at 60fps
+- 20,000 moving rectangles as **2d polylines** (80,000 short lines) at 60fps
+- 80,000 moving square-cornered **2d points** at 60fps
+- 5000 moving (very long) **2d lines** at 60fps
 
 *Please note that performance can vary depending on the stroke weight (and/or the length) selected. The thicker (or the longer) the primitive, the more pixels it requires, and the slower the rendering.
 All the above tests are performed with a default stroke weight of 1.*
